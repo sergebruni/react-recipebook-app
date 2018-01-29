@@ -1,8 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+
 import { TransitionGroup } from 'react-transition-group'
 
-import Fade from './CSSTransition'
+import {Fade} from '../RecipeTransitions/RecipeTransitions'
+
+import './styles.scss';
 
 class RecipeList extends React.Component {  
   render () {
@@ -16,14 +18,14 @@ class RecipeList extends React.Component {
         <ul>
           <TransitionGroup>
           {recipes.map((recipe, i) => {
-		    const classActive = activeRecipe === i ? 'active' : '';
-		    return (
-	            <Fade>                       
-	              <li key={i}>
+    		    const classActive = activeRecipe === i ? 'active' : '';
+    		    return (
+	            <Fade key={i}>
+	              <li>
 	                <a href="#" className={classActive} key={i} onClick={() => viewRecipe(i)}>{recipe.name}</a>
 	              </li>
 	            </Fade>
-		    )}
+		        )}
           )}
           </TransitionGroup>
         </ul>

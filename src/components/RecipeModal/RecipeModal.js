@@ -1,6 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { Modal, ModalBody } from 'reactstrap';
+
+import './styles.scss';
 
 class RecipeModal extends React.Component {
 

@@ -1,0 +1,46 @@
+.recipe-list {
+  background: #fff;
+  position: relative;
+  margin: 0 5px;
+  box-shadow: 1px -1px 5px #555;
+  border-top: 1px solid #946947;
+  ul {
+    list-style: none;
+    margin: 25px 0 0;
+    padding: 20px 10px;
+    li {
+      padding: 5px 10px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      a {
+        text-decoration: none;
+        color: #333;
+        transition: all .2s ease-in;
+        &:hover, &.active {
+          color: #000;
+          font-style: bold;
+          font-size: 17px;
+          text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+  }
+  button {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+  }
+  &:before {
+    position: absolute;
+    content: "";
+    top: -4px;
+    left: 0;
+    height: 10px;
+    width: 99%;
+    background-size: 13px 12px;
+    background-image: -webkit-radial-gradient(5% 40%, circle, transparent 70%, #555 20%);
+    background-image: -moz-radial-gradient(5% 40%, circle, transparent 70%, #555 20%);
+    background-image: -ms-radial-gradient(5% 40%, circle, transparent 70%, #555 20%);
+    background-image: -o-radial-gradient(5% 40%, circle, transparent 70%, #555 20%);
+    background-image: radial-gradient(circle at 5% 40%, transparent 70%, #555 20%);
+  }
+}

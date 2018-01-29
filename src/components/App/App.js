@@ -1,12 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+
 import { TransitionGroup } from 'react-transition-group'
 
-import RecipeList from './RecipeList'
-import RecipeContent from './RecipeContent'
-import RecipeModal from './RecipeModal'
+import RecipeList from '../RecipeList/RecipeList'
+import RecipeContent from '../RecipeContent/RecipeContent'
+import RecipeModal from '../RecipeModal/RecipeModal'
 
-import Fade from './CSSTransition'
+import { Fade } from '../RecipeTransitions/RecipeTransitions'
+
+import './styles.scss';
 
 class ReactContainer extends React.Component {
   constructor (props) {

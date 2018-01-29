@@ -1,0 +1,39 @@
+#root {
+  overflow-x: hidden;
+  height: 100%;
+  h1 {
+    margin: 20px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    text-shadow: 10px 1px 10px 10px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.button-bar {
+  display: flex;
+}
+
+.fade-enter {
+  opacity: 0.01;
+  transform: translateX(80vh);
+  &.fade-enter-active {
+    opacity: 1;
+    transition-duration: 1000ms;
+    transition-property: opacity transform;
+    transition-timing-function: ease-out;
+    transform: none;
+  }
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: none;
+  &.fade-exit-active {
+    opacity: 0.01;
+    transition-duration: 600ms;
+    transition-property: opacity transform;
+    transition-timing-function: ease-in;
+    transform: translateX(50vh);
+  }
+}

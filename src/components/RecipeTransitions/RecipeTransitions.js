@@ -1,6 +1,8 @@
+import React from 'react';
+
 import { CSSTransition } from 'react-transition-group'
 
-export const Fade = ({ children, ...props }) => (
+const Fade = ({ children, ...props }) => (
   <CSSTransition
     classNames='fade'
     timeout={1500}
@@ -10,3 +12,7 @@ export const Fade = ({ children, ...props }) => (
     </div>
   </CSSTransition>
 );
+
+export {
+	Fade
+};

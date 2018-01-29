@@ -1,0 +1,51 @@
+{
+  "name": "react-recipebook-app",
+  "version": "1.0.0",
+  "description": "React recipe book app for cooking",
+  "main": "index.js",
+  "scripts": {
+    "serve:webpack": "webpack-dev-server --hot --inline --content-base ./src",
+    "serve:json": "json-server db.json",
+    "start": "concurrently \"yarn serve:webpack\" \"yarn serve:json\""
+  },
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-env": "^1.1.8",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.26.1",
+    "html-webpack-plugin": "^2.28.0",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^6.0.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.3.0"
+  },
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "bootstrap": "4.0.0",
+    "file-loader": "^1.1.6",
+    "font-awesome": "^4.7.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-transition-group": "^2.2.1",
+    "reactstrap": "^5.0.0-alpha.4",
+    "url-loader": "^0.6.2",
+    "yarn": "^1.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergebruni/react-recipebook-app.git"
+  },
+  "keywords": [
+    "react",
+    "webpack"
+  ],
+  "author": "Sergio Bruni",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sergebruni/react-recipebook-app/issues"
+  },
+  "homepage": "https://github.com/sergebruni/react-recipebook-app#readme"
+}

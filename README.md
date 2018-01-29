@@ -13,5 +13,4 @@ cd react-weather-app
 yarn
 
 yarn run serve:webpack
-```# react-recipebook-app
-React recipe book app for cooking
+```
